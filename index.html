@@ -1,1 +1,96 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Some Desc">
+  <meta name="RubenG" content="Ejemplo">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <title>Pokédex</title>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- csnvas JS Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/jquery.canvasjs.min.js"></script>
+  
+</head>
+
+<body>
+  <div class="text-center mt-0 pt-3 pb-5" id="logo"> 
+  <img src="assets/img/pkmnlogo.png" width="400" height="150">
+  </div>
+
+
+  <!-- Page Content -->
+  <div class="container">    
+    <div class="justify-content-md-center p-0">
+      <!-- Formulario -->
+      <form id="formP">
+        <div class="form-group row d-flex justify-content-center">
+          <label for="numberP" class="col-3 pt-1">Ingrese número de pokemon</label>
+          <div class="col-3">
+            <input type="number" class="form-control" id="numberP" placeholder="número de 1 a 807">
+          </div>
+          <div class="col-2">
+            <input type="Image"  src="assets/img/Lupa_(Dream_World).png"  height="40" id="lupa"></input>
+          </div>
+          <div class="form-group row">            
+        </div>        
+        </div>
+      </form>
+      <!-- Final del formulario -->
+    </div>
+
+     <!-- <div> Donde se inyectaran los datos luego de la consulta a la API -->
+<div id="pokedex">    
+    <div id="infoPokemon" class="col-md-12 text-center container p5">
+        <div class="row">
+          <!--Imagen Info Pokemon-->           
+            <div class="col-sm-5 pokeInfo p-2"></div>          
+          <!--Tipo Pokemon-->
+            <div class="col-sm-2 vertical-center pokeTipo"></div>
+          <!--Grafico Radar-->
+            <div class="col-sm-5"id="chartdiv"></div>            
+        </div>
+    </div>
+<!--Barra con Descripcion pokemon-->
+    
+
+
+<!--Barra con Sprites de pokemon-->
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-5 pokeSprites p5"></div>
+    <div class="col-md-7 pokeDescripcion text-center mt-3 pt-2"></div>   
+    </div>
+  </div>
+
+        </div> 
+    </div>
+  
+  <!-- Acceso a la hoja main.js donde estaran las declaraciones en javascript -->  
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+<footer class="text-center pt-5 text-gray">
+  ©2020 Pokémon. TM, ®Nintendo.
+</footer>
+
+</html>
